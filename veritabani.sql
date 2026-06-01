@@ -32,7 +32,7 @@ CREATE TABLE Randevular (
     dns_id INT,
     tarih DATETIME,
     FOREIGN KEY (dyt_id) REFERENCES Diyetisyenler(dyt_id),
-    FOREIGN KEY (dns_id) REFERENCES Danisanlar(dns_id)
+    FOREIGN KEY (dns_id) REFERENCES Danisanlar(dns_id) ON DELETE CASCADE
 );
 
 DELIMITER $$
